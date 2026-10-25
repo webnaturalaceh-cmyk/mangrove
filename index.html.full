@@ -1,0 +1,1362 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Mangrove Park Lampulo - Mangrove Park Lampulo</title>
+    <link rel="icon" href="favicon.ico" sizes="32x32">
+    	<!-- Google Fonts -->
+	<link href="assets/fonts/fonts.css" rel="stylesheet">
+	<!-- Bootstrap 5 + JQuery -->
+	<link href="assets/vendor/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+	<script src="assets/vendor/jquery@3.7.1/dist/jquery.min.js"></script>
+	<script src="assets/vendor/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+	<!-- Font Awesome 7 -->
+	<link href="assets/vendor/@fortawesome/fontawesome-free@7.1.0/css/all.min.css" rel="stylesheet">
+	<!-- Parsley.js -->
+	<link href="assets/vendor/parsleyjs@2.9.2/src/parsley.min.css" rel="stylesheet">
+	<script src="assets/vendor/parsleyjs@2.9.2/dist/parsley.min.js"></script>
+	<script src="assets/vendor/parsleyjs@2.9.2/dist/i18n/id.js"></script>
+	<script>Parsley.setLocale('id');</script>
+	<!-- Password Strength Meter -->
+	<script src="assets/vendor/pwstrength-bootstrap@3.1.3/dist/pwstrength-bootstrap.min.js"></script>
+	<!-- Inputmask -->
+	<link href="assets/vendor/inputmask@5.0.9/dist/colormask.min.css" rel="stylesheet">
+	<script src="assets/vendor/inputmask@5.0.9/dist/jquery.inputmask.min.js"></script>
+	<!-- Select2 + Bootstrap 5 -->
+	<link href="assets/vendor/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet">
+	<link href="assets/vendor/select2-bootstrap-5-theme@1.3.0/dist/select2-bootstrap-5-theme.min.css" rel="stylesheet">
+	<script src="assets/vendor/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+	<!-- Flatpickr -->
+	<link href="assets/vendor/flatpickr@4.6.13/dist/flatpickr.min.css" rel="stylesheet">
+	<link href="assets/vendor/flatpickr@4.6.13/dist/plugins/confirmDate/confirmDate.css" rel="stylesheet">
+	<script src="assets/vendor/flatpickr@4.6.13/dist/flatpickr.min.js"></script>
+	<script src="assets/vendor/flatpickr@4.6.13/dist/l10n/id.js"></script>
+	<script src="assets/vendor/flatpickr@4.6.13/dist/plugins/confirmDate/confirmDate.js"></script>
+	<!-- DataTables Core + Bootstrap 5 -->
+	<link href="assets/vendor/datatables.net-bs5@2.3.4/css/dataTables.bootstrap5.min.css" rel="stylesheet">
+	<script src="assets/vendor/datatables.net@2.3.4/js/dataTables.min.js"></script>
+	<script src="assets/vendor/datatables.net-bs5@2.3.4/js/dataTables.bootstrap5.min.js"></script>
+	<!-- DataTables Buttons + Bootstrap 5 -->
+	<link href="assets/vendor/datatables.net-buttons-bs5@3.2.5/css/buttons.bootstrap5.min.css" rel="stylesheet">
+	<script src="assets/vendor/jszip@3.10.1/dist/jszip.min.js"></script>
+	<script src="assets/vendor/datatables.net-buttons@3.2.5/js/dataTables.buttons.min.js"></script>
+	<script src="assets/vendor/datatables.net-buttons-bs5@3.2.5/js/buttons.bootstrap5.min.js"></script>
+	<script src="assets/vendor/datatables.net-buttons@3.2.5/js/buttons.html5.min.js"></script>
+	<script src="assets/vendor/datatables.net-buttons@3.2.5/js/buttons.print.min.js"></script>
+	<script src="assets/vendor/datatables.net-buttons@3.2.5/js/buttons.colVis.min.js"></script>
+	<!-- ApexCharts -->
+	<link href="assets/vendor/apexcharts@5.3.5/dist/apexcharts.min.css" rel="stylesheet">
+	<script src="assets/vendor/apexcharts@5.3.5/dist/apexcharts.min.js"></script>
+	<!-- SweetAlert2 -->
+	<link href="assets/vendor/sweetalert2@11.23.0/dist/sweetalert2.min.css" rel="stylesheet">
+	<script src="assets/vendor/sweetalert2@11.23.0/dist/sweetalert2.all.min.js"></script>
+	<!-- LoadingOverlay -->
+	<script src="assets/vendor/gasparesganga-jquery-loading-overlay@2.1.7/dist/loadingoverlay.min.js"></script>
+	<!-- Summernote -->
+	<link href="assets/vendor/summernote@0.9.1/dist/summernote.min.css" rel="stylesheet">
+	<script src="assets/vendor/summernote@0.9.1/dist/summernote.min.js"></script>
+	<!-- Pannellum -->
+	<link href="assets/vendor/pannellum@2.5.6/build/pannellum.min.css" rel="stylesheet">
+	<script src="assets/vendor/pannellum@2.5.6/build/pannellum.min.js"></script>
+	<!-- Custom CSS & JS -->
+	<link href="assets/style.css" rel="stylesheet">
+	<script src="assets/app.js"></script>
+</head>
+<body>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark shadow-sm sticky-top" style="background:linear-gradient(135deg, #2e7d32, #558b2f);">
+    <div class="container">
+        <a class="navbar-brand font-condensed fw-bold" href="#home"><img src="assets/uploads/logo/logo_1762005991.png" alt="Logo Header" style="padding-right:10px;height:40px;width:auto;">Mangrove Park Lampulo</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" style="border:2px solid #84af88;padding:4px 8px;">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link fw-bold" href="#home">Home</a></li>
+                <li class="nav-item"><a class="nav-link fw-bold" href="#berita">Berita</a></li>
+                <li class="nav-item"><a class="nav-link fw-bold" href="#adopsi">Adopsi</a></li>
+                <li class="nav-item"><a class="nav-link fw-bold" href="#fauna">Fauna</a></li>
+                <li class="nav-item"><a class="nav-link fw-bold" href="#galeri">Galeri</a></li>
+                <li class="nav-item"><a class="nav-link fw-bold" href="#testimoni">Testimoni</a></li>
+                <li class="nav-item"><a class="nav-link fw-bold" href="#kontak">Kontak</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- Slider -->
+<div id="home" class="carousel slide" data-bs-ride="carousel">
+        <!-- INDICATORS OTOMATIS -->
+    <div class="carousel-indicators">
+                <button type="button" data-bs-target="#home" data-bs-slide-to="0" class="active" aria-current="true">
+        </button>
+                <button type="button" data-bs-target="#home" data-bs-slide-to="1" class="" aria-current="false">
+        </button>
+                <button type="button" data-bs-target="#home" data-bs-slide-to="2" class="" aria-current="false">
+        </button>
+                <button type="button" data-bs-target="#home" data-bs-slide-to="3" class="" aria-current="false">
+        </button>
+                <button type="button" data-bs-target="#home" data-bs-slide-to="4" class="" aria-current="false">
+        </button>
+                <button type="button" data-bs-target="#home" data-bs-slide-to="5" class="" aria-current="false">
+        </button>
+                <button type="button" data-bs-target="#home" data-bs-slide-to="6" class="" aria-current="false">
+        </button>
+            </div>
+    <!-- SLIDES -->
+    <div class="carousel-inner">
+                <div class="carousel-item active">
+            <img src="assets/img/slider/B4102120.webp" class="d-block w-100" alt="Slider 1">
+        </div>
+                <div class="carousel-item ">
+            <img src="assets/img/slider/B4102144.webp" class="d-block w-100" alt="Slider 2">
+        </div>
+                <div class="carousel-item ">
+            <img src="assets/img/slider/B4102219.webp" class="d-block w-100" alt="Slider 3">
+        </div>
+                <div class="carousel-item ">
+            <img src="assets/img/slider/B4102251.webp" class="d-block w-100" alt="Slider 4">
+        </div>
+                <div class="carousel-item ">
+            <img src="assets/img/slider/B4102266.webp" class="d-block w-100" alt="Slider 5">
+        </div>
+                <div class="carousel-item ">
+            <img src="assets/img/slider/B4102317.webp" class="d-block w-100" alt="Slider 6">
+        </div>
+                <div class="carousel-item ">
+            <img src="assets/img/slider/B4102393.webp" class="d-block w-100" alt="Slider 7">
+        </div>
+            </div>
+    <!-- CONTROLS -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#home" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+        <span class="visually-hidden">Sebelumnya</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#home" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+        <span class="visually-hidden">Selanjutnya</span>
+    </button>
+</div>
+
+<!-- Opener -->
+<section id="opener" style="display:flex;background:linear-gradient(145deg, #f9fcfa, #f1fdf5);">
+    <div class="container my-5 text-center">
+        <h1 class="mb-3">
+            <span class="daun-brown">Selamat Datang di</span> <span class="daun-green">Mangrove Park Lampulo</span>
+        </h1>
+        <p class="lead">
+            Mari bersama menjaga keindahan pesisir Lampulo.
+Dukung program penanaman, jadilah relawan, atau adopsi satu pohon mangrove hari ini untuk masa depan yang lebih hijau.        </p>
+        <div class="mt-4 mb-4">
+                        <a href="#adopsi" class="btn btn-success btn-lg me-2">
+                <i class="fa fa-seedling"></i> Adopsi Pohon
+            </a>
+            <a href="#kontak" class="btn btn-outline-success btn-lg">
+                <i class="fa fa-envelope"></i> Hubungi Kami
+            </a>
+                    </div>
+        <!-- Narasi -->
+        <p class="text-muted mb-4 px-3">
+            Kami melibatkan berbagai peran yang saling mendukung demi keberhasilan program penanaman dan pelestarian lingkungan.
+            Setiap peran memiliki tanggung jawab dan kontribusi.
+        </p>
+        <!-- Daftar Peran -->
+        <div class="row g-4 justify-content-center px-3 text-start">
+            <div class="col-md-6 col-lg-3">
+                <div class="p-3 border rounded bg-white h-100 shadow-sm">
+                    <div class="text-center mb-2">
+                        <i class="fa fa-hand-holding-heart fa-2x text-primary"></i>
+                    </div>
+                    <h6 class="fw-bold text-primary text-center mb-2">Relawan</h6>
+                    <p class="small text-muted mb-0">
+                        Individu atau kelompok yang berpartisipasi langsung dalam kegiatan penanaman mangrove
+                        serta dapat mengadopsi pohon sebagai bentuk dukungan terhadap pelestarian alam.
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="p-3 border rounded bg-white h-100 shadow-sm">
+                    <div class="text-center mb-2">
+                        <i class="fa fa-compass fa-2x text-success"></i>
+                    </div>
+                    <h6 class="fw-bold text-success text-center mb-2">Pemandu</h6>
+                    <p class="small text-muted mb-0">
+                        Mendampingi para relawan selama kegiatan berlangsung, memberikan edukasi lingkungan,
+                        serta memastikan kegiatan berjalan sesuai rencana dan aman bagi semua peserta.
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="p-3 border rounded bg-white h-100 shadow-sm">
+                    <div class="text-center mb-2">
+                        <i class="fa fa-helmet-safety fa-2x text-warning"></i>
+                    </div>
+                    <h6 class="fw-bold text-warning text-center mb-2">Tracker</h6>
+                    <p class="small text-muted mb-0">
+                        Bertanggung jawab terhadap kondisi lapangan dan keberlanjutan pohon yang telah ditanam.
+                        Tracker juga melakukan monitoring serta melaporkan hasil pengamatan ke sistem.
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="p-3 border rounded bg-white h-100 shadow-sm">
+                    <div class="text-center mb-2">
+                        <i class="fa fa-user-shield fa-2x text-info"></i>
+                    </div>
+                    <h6 class="fw-bold text-info text-center mb-2">Admin</h6>
+                    <p class="small text-muted mb-0">
+                        Mengelola sistem secara keseluruhan, termasuk data pengguna, berita, kegiatan, dan pengaturan.
+                        Admin memastikan semua informasi tetap akurat dan sistem berjalan dengan baik.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- Pesan penutup -->
+        <div class="mt-4 text-muted px-4">
+            <i class="fa fa-leaf text-success me-1"></i>
+            Bersama, setiap peran menjadi bagian penting dari ekosistem hijau yang berkelanjutan.
+        </div>
+    </div>
+</section>
+
+<!-- Berita Terkini -->
+<section id="berita" style="background:url('assets/img/pattern/tree-trans10.webp') top center repeat #F4F1E9;display:flex;">
+    <div class="container my-5">
+        <h2 class="section-title mt-0">Berita Terkini</h2>
+        <div class="row mb-4">
+                        <div class="col-md-4 p-3">
+                <div class="card shadow-sm interactive-card">
+                    <a href="#berita">
+                        <img src="assets/uploads/berita/2025/11/1763501096_WhatsApp_Image_2025-11-18_at_15.22.49_4d34985e.jpg" class="card-img-top" alt="10 Kilogram Bibit Kepiting Dilepasliarkan di Mangrove Park Lampulo">
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <a href="#berita" class="headline-news-title fw-bold text-decoration-none">
+                                10 Kilogram Bibit Kepiting Dilepasliarkan di Mangrove Park Lampulo                            </a>
+                        </h5>
+                        <p class="news-meta mb-2">
+                            <i class="fa fa-calendar-alt"></i>
+                            19 November 2025                        </p>
+                                                <p class="card-text">
+                            
+Banda Aceh (ANTARA) - Pemangku Mangrove Park Lampulo bersama 
+komunitas anak muda Aceh yang tergabung dalam Ruang ...                            <a href="#berita" class="text-decoration-none fw-bold">Baca Selengkapnya &raquo;</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+                        <div class="col-md-4 p-3">
+                <div class="card shadow-sm interactive-card">
+                    <a href="#berita">
+                        <img src="assets/uploads/berita/2025/11/1761992247_Tanam-Manggrove-di-Lampulo-1.jpeg" class="card-img-top" alt="Pelajar Tanam 1.000 Mangrove untuk Ciptakan Generasi Hijau">
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <a href="#berita" class="headline-news-title fw-bold text-decoration-none">
+                                Pelajar Tanam 1.000 Mangrove untuk Ciptakan Generasi Hijau                            </a>
+                        </h5>
+                        <p class="news-meta mb-2">
+                            <i class="fa fa-calendar-alt"></i>
+                            25 Oktober 2025                        </p>
+                                                <p class="card-text">
+                            Pelajar di Kota Banda Aceh menanam 1.000 bibit mengrove sebagai upaya penanganan dampak perubahan iklim serta melahir...                            <a href="#berita" class="text-decoration-none fw-bold">Baca Selengkapnya &raquo;</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+                        <div class="col-md-4 p-3">
+                <div class="card shadow-sm interactive-card">
+                    <a href="#berita">
+                        <img src="assets/uploads/berita/2025/10/1760545391-Manggrove-ASPPI.jpg" class="card-img-top" alt="Peringati Hari Pariwisata Sedunia, ASPPI Tanam Mangrove di Lampulo">
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <a href="#berita" class="headline-news-title fw-bold text-decoration-none">
+                                Peringati Hari Pariwisata Sedunia, ASPPI Tanam Mangrove di Lampulo                            </a>
+                        </h5>
+                        <p class="news-meta mb-2">
+                            <i class="fa fa-calendar-alt"></i>
+                            28 September 2025                        </p>
+                                                <p class="card-text">
+                            Pelaku pariwisata yang tergabung dalam Asosiasi Pelaku Pariwisata Indonesia (ASPPI) Aceh melakukan penanaman mangrove...                            <a href="#berita" class="text-decoration-none fw-bold">Baca Selengkapnya &raquo;</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+                    </div>
+    </div>
+</section>
+
+<!-- Jenis Mangrove + Adopsi -->
+<section id="adopsi" style="display:flex;">
+    <div class="container my-5">
+        <h2 class="section-title mt-0">Adopsi Mangrove</h2>
+        <p class="text-center mb-4" style="font-size:1.1em;">
+            Lewat program <strong>Adopsi Mangrove</strong>, kamu bisa ikut menjaga pesisir Lampulo agar tetap hijau dan lestari.
+            Setiap pohon yang kamu adopsi akan ditanam, dirawat, dan dilaporkan perkembangannya secara berkala.
+        </p>
+        <div class="alert alert-success text-center rounded-4 shadow-sm" role="alert">
+            <i class="fa fa-leaf me-2"></i>
+            Adopsi 1 pohon = bantu serap hingga <strong>20 kg CO₂</strong> setiap tahun.
+            Yuk, jadi bagian dari perubahan hijau di pesisir Lampulo!
+        </div>
+        <div class="row mb-4">
+                        <div class="col-md-4 p-3">
+                <div class="card shadow-sm interactive-card">
+                    <img src="assets/uploads/jenis-pohon/rhizophora-sp-400x250.webp" class="card-img-top d-block w-100" alt="Rhizophora sp">
+                    <div class="card-body">
+                        <h5 class="card-title">Rhizophora sp</h5>
+                        <p class="card-text">
+                            Jenis mangrove yang paling umum di kawasan ini dan khas dengan akar tunjang besar.                        </p>
+                        <p class="mb-3">
+	                            <span class="text-danger text-decoration-line-through me-2">Rp20.000,-</span>
+	                            <span class="fw-bold text-success">Rp3.000,-</span>
+	                        </p>
+	                        <a href="#kontak"><button class="btn btn-success"><i class="fa fa-seedling"></i> Adopsi Sekarang</button></a>                    </div>
+                </div>
+            </div>
+                        <div class="col-md-4 p-3">
+                <div class="card shadow-sm interactive-card">
+                    <img src="assets/uploads/jenis-pohon/avicennia-400x250.webp" class="card-img-top d-block w-100" alt="Avicennia">
+                    <div class="card-body">
+                        <h5 class="card-title">Avicennia</h5>
+                        <p class="card-text">
+                            Memiliki akar nafas yang khas, tumbuh di garis pantai dan tahan terhadap salinitas tinggi.                        </p>
+                        <p class="mb-3">
+	                            <span class="text-danger text-decoration-line-through me-2">Rp20.000,-</span>
+	                            <span class="fw-bold text-success">Rp3.000,-</span>
+	                        </p>
+	                        <a href="#kontak"><button class="btn btn-success"><i class="fa fa-seedling"></i> Adopsi Sekarang</button></a>                    </div>
+                </div>
+            </div>
+                        <div class="col-md-4 p-3">
+                <div class="card shadow-sm interactive-card">
+                    <img src="assets/uploads/jenis-pohon/nipah-400x250.webp" class="card-img-top d-block w-100" alt="Nipah">
+                    <div class="card-body">
+                        <h5 class="card-title">Nipah</h5>
+                        <p class="card-text">
+                            Tumbuhan mangrove berdaun besar yang menyerupai palma.                        </p>
+                        <p class="mb-3">
+	                            <span class="text-danger text-decoration-line-through me-2">Rp20.000,-</span>
+	                            <span class="fw-bold text-success">Rp7.000,-</span>
+	                        </p>
+	                        <a href="#kontak"><button class="btn btn-success"><i class="fa fa-seedling"></i> Adopsi Sekarang</button></a>                    </div>
+                </div>
+            </div>
+                        <div class="col-md-4 p-3">
+                <div class="card shadow-sm interactive-card">
+                    <img src="assets/uploads/jenis-pohon/ceriops-tagal-400x250.webp" class="card-img-top d-block w-100" alt="Ceriops tagal">
+                    <div class="card-body">
+                        <h5 class="card-title">Ceriops tagal</h5>
+                        <p class="card-text">
+                            Memiliki daun oval tebal berwarna hijau mengilap dan tumbuh di tanah berlumpur padat.                        </p>
+                        <button class="btn btn-secondary" disabled>Segera Hadir</button>                    </div>
+                </div>
+            </div>
+                        <div class="col-md-4 p-3">
+                <div class="card shadow-sm interactive-card">
+                    <img src="assets/uploads/jenis-pohon/bruguiera-gymnorrhiza-400x250.webp" class="card-img-top d-block w-100" alt="Bruguiera gymnorrhiza">
+                    <div class="card-body">
+                        <h5 class="card-title">Bruguiera gymnorrhiza</h5>
+                        <p class="card-text">
+                            Memiliki akar lutut kokoh dan bunga kemerahan, tumbuh di zona pasang surut.                        </p>
+                        <button class="btn btn-secondary" disabled>Segera Hadir</button>                    </div>
+                </div>
+            </div>
+                        <!-- Card tambahan sebagai pemanis -->
+            <div class="col-md-4 p-3">
+                <div class="card shadow-sm text-center d-flex align-items-center justify-content-center p-4 interactive-card" style="background:linear-gradient(135deg,#e8f5e9,#ffffff);border:none;min-height:395px;">
+                    <div class="card-content" style="transition:opacity 0.5s ease;">
+                        <h5 class="card-title text-success">
+                            <i class="fa fa-heart me-2"></i>Tanam Harapan
+                        </h5>
+                        <p class="card-text" style="font-style:italic;">
+                            “Satu pohon mangrove yang kamu tanam hari ini, bisa jadi naungan bagi seribu kehidupan esok hari. <strong>Terima kasih sudah ikut menumbuhkan kehidupan!</strong>”
+                        </p>
+                        <p class="small text-muted mb-3">
+                            Setiap donasi akan langsung digunakan untuk penanaman dan perawatan mangrove di Lampulo.
+                        </p>
+                        <a href="#kontak">
+                            <button class="btn btn-outline-success"><i class="fa fa-seedling"></i> Ikut Menanam</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Statistik Mangrove -->
+<section id="statistik" style="padding:80px 0;background:linear-gradient(rgba(30,70,50,.88),rgba(15,45,30,.88)), url('assets/img/background/galeri-03.webp') center/cover no-repeat;color:white;">
+
+    
+    <div class="container">
+
+        <h2 class="text-center fw-bold mb-2 text-light">Statistik Kawasan Mangrove</h2>
+        <p class="text-center mb-5" style="opacity:.9;font-size:1.1rem;">
+            Ringkasan data konservasi Mangrove Park Lampulo.
+        </p>
+
+        <div class="row g-4 justify-content-center">
+
+            <!-- Total Pohon -->
+            <div class="col-6 col-md-3">
+                <div class="stat-card text-center">
+                    <div class="icon-circle">
+                        <i class="fa fa-seedling"></i>
+                    </div>
+                    <p class="label">
+                        Total Pohon
+                    </p>
+                    <h2 class="counter" data-target="15078">0</h2>
+                </div>
+            </div>
+
+            <!-- Luas Area -->
+            <div class="col-6 col-md-3">
+                <div class="stat-card text-center">
+                    <div class="icon-circle">
+                        <i class="fa fa-map"></i>
+                    </div>
+                    <p class="label">
+                        Luas Area (m²)
+                    </p>
+                    <h2 class="counter" data-target="17900">0</h2>
+                </div>
+            </div>
+
+            <!-- Blok Area -->
+            <div class="col-6 col-md-3">
+                <div class="stat-card text-center">
+                    <div class="icon-circle">
+                        <i class="fa fa-layer-group"></i>
+                    </div>
+                    <p class="label">
+                        Total Blok Area
+                    </p>
+                    <h2 class="counter" data-target="25">0</h2>
+                </div>
+            </div>
+
+            <!-- Jenis Mangrove -->
+            <div class="col-6 col-md-3">
+                <div class="stat-card text-center">
+                    <div class="icon-circle">
+                        <i class="fa fa-leaf"></i>
+                    </div>
+                    <p class="label">
+                        Jenis Mangrove
+                    </p>
+                    <h2 class="counter" data-target="5">0</h2>
+                </div>
+            </div>
+
+            <!-- Jenis Fauna -->
+            <div class="col-6 col-md-3">
+                <div class="stat-card text-center">
+                    <div class="icon-circle">
+                        <i class="fa fa-crow"></i>
+                    </div>
+                    <p class="label">
+                        Jenis Fauna
+                    </p>
+                    <h2 class="counter" data-target="40">0</h2>
+                </div>
+            </div>
+
+            <!-- Relawan -->
+            <div class="col-6 col-md-3">
+                <div class="stat-card text-center">
+                    <div class="icon-circle">
+                        <i class="fa fa-users"></i>
+                    </div>
+                    <p class="label">
+                        Relawan Aktif
+                    </p>
+                    <h2 class="counter" data-target="495">0</h2>
+                </div>
+            </div>
+
+            <!-- Pemandu -->
+            <div class="col-6 col-md-3">
+                <div class="stat-card text-center">
+                    <div class="icon-circle">
+                        <i class="fa fa-user-tie"></i>
+                    </div>
+                    <p class="label">
+                        Pemandu Aktif
+                    </p>
+                    <h2 class="counter" data-target="3">0</h2>
+                </div>
+            </div>
+
+        </div>
+
+        <p class="text-center mt-5 fade-in" style="opacity:.8;">
+            <em>"Menjaga pesisir bukan hanya tentang menanam, tetapi memastikan ekosistem terus hidup dan berkembang."</em>
+        </p>
+
+    </div>
+</section>
+<style>
+    .stat-card {
+        padding: 25px;
+        background: rgba(255,255,255,.15);
+        border-radius: 18px;
+        backdrop-filter: blur(4px);
+        box-shadow: 0 4px 12px rgba(0,0,0,.18);
+        transition: .3s;
+    }
+
+    .stat-card:hover {
+        transform: translateY(-5px);
+        background: rgba(255,255,255,.22);
+    }
+
+    .icon-circle {
+        width: 58px;
+        height: 58px;
+        margin: 0 auto 12px;
+        background: rgba(255,255,255,.25);
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 26px;
+        color: white;
+    }
+
+    .label {
+        text-transform: uppercase;
+        opacity: .85;
+        font-size: .8rem;
+        margin-bottom: 4px;
+    }
+
+    .counter {
+        font-size: 2rem;
+        font-weight: 700;
+        color: white;
+    }
+
+    .fade-in {
+        opacity: 0;
+        animation: fadeInUp .9s ease forwards;
+    }
+
+    @keyframes fadeInUp {
+        from {
+            opacity: 0;
+            transform: translateY(12px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+</style>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const counters = document.querySelectorAll('.counter');
+
+        counters.forEach(counter => {
+            const target = +counter.dataset.target;
+            let count = 0;
+            const step = Math.max(1, target / 80);
+
+            let update = setInterval(() => {
+                count += step;
+                if (count >= target) {
+                    counter.textContent = target.toLocaleString('id-ID');
+                    clearInterval(update);
+                } else {
+                    counter.textContent = Math.round(count).toLocaleString('id-ID');
+                }
+            },
+                25);
+        });
+    });
+</script>
+
+<!-- Jenis Fauna -->
+<section id="fauna" style="display:flex;justify-content:center;align-items:center;min-height:400px;background:linear-gradient(rgba(78, 52, 46, 0.8), rgba(78, 52, 46, 0.8)), url('assets/img/background/galeri-02.webp') center/cover no-repeat;color:white;padding-top:10px;">
+    <div class="container my-5">
+        <h2 class="section-title mt-0 text-light">Fauna di Mangrove Park</h2>
+        <p class="text-center text-light mb-5 fade-in" style="max-width:750px;margin:auto;line-height:1.6;">
+            <em>“Hutan mangrove bukan hanya rumah bagi pohon, tapi juga bagi kehidupan yang bersembunyi di antara akar dan lumpur.”</em>
+            <br>
+            Mari kenali para penghuni kecil yang menjaga keseimbangan ekosistem pesisir Lampulo.
+        </p>
+        <div class="row">
+                        <div class="col-md-3 p-3">
+                <div class="card shadow-sm interactive-card h-100">
+                    <img src="assets/uploads/jenis-fauna/fauna_1762270965.jpeg" class="card-img-top" alt="Burung Pleci" style="aspect-ratio:16/9;object-fit:cover;">
+                    <div class="card-body">
+                        <h5 class="card-title text-success fw-semibold mb-1">Burung Pleci</h5>
+                        <p class="text-muted fst-italic small mb-2">
+                            Zosterops flavus                        </p>
+                        <p class="card-text small">
+                            Burung kecil pemakan nektar dengan suara khas melengking.                        </p>
+                    </div>
+                </div>
+            </div>
+                        <div class="col-md-3 p-3">
+                <div class="card shadow-sm interactive-card h-100">
+                    <img src="assets/uploads/jenis-fauna/fauna_1762270517.jpeg" class="card-img-top" alt="Bangau Bakau" style="aspect-ratio:16/9;object-fit:cover;">
+                    <div class="card-body">
+                        <h5 class="card-title text-success fw-semibold mb-1">Bangau Bakau</h5>
+                        <p class="text-muted fst-italic small mb-2">
+                            Butorides striata                        </p>
+                        <p class="card-text small">
+                            Burung air berleher pendek yang sering ditemukan di area mangrove.                        </p>
+                    </div>
+                </div>
+            </div>
+                        <div class="col-md-3 p-3">
+                <div class="card shadow-sm interactive-card h-100">
+                    <img src="assets/uploads/jenis-fauna/fauna_1762270676.jpeg" class="card-img-top" alt="Burung Bangau / Kuntul" style="aspect-ratio:16/9;object-fit:cover;">
+                    <div class="card-body">
+                        <h5 class="card-title text-success fw-semibold mb-1">Burung Bangau / Kuntul</h5>
+                        <p class="text-muted fst-italic small mb-2">
+                            Egretta garzetta                        </p>
+                        <p class="card-text small">
+                            Spesies kuntul putih kecil yang sering terlihat di pesisir dan tambak.                        </p>
+                    </div>
+                </div>
+            </div>
+                        <div class="col-md-3 p-3">
+                <div class="card shadow-sm interactive-card h-100">
+                    <img src="assets/uploads/jenis-fauna/fauna_1762274470.jpeg" class="card-img-top" alt="Burung Cekakak Suci" style="aspect-ratio:16/9;object-fit:cover;">
+                    <div class="card-body">
+                        <h5 class="card-title text-success fw-semibold mb-1">Burung Cekakak Suci</h5>
+                        <p class="text-muted fst-italic small mb-2">
+                            Todiramphus sanctus                        </p>
+                        <p class="card-text small">
+                            Burung raja-udang dengan warna biru mencolok dan suara nyaring.                        </p>
+                    </div>
+                </div>
+            </div>
+                        <div class="col-md-3 p-3">
+                <div class="card shadow-sm interactive-card h-100">
+                    <img src="assets/uploads/jenis-fauna/fauna_1762270747.jpeg" class="card-img-top" alt="Burung Dara Laut Arktik" style="aspect-ratio:16/9;object-fit:cover;">
+                    <div class="card-body">
+                        <h5 class="card-title text-success fw-semibold mb-1">Burung Dara Laut Arktik</h5>
+                        <p class="text-muted fst-italic small mb-2">
+                            Sterna paradisaea                        </p>
+                        <p class="card-text small">
+                            Migran jarak jauh, terbang dari Arktik ke Antartika setiap tahun.                        </p>
+                    </div>
+                </div>
+            </div>
+                        <div class="col-md-3 p-3">
+                <div class="card shadow-sm interactive-card h-100">
+                    <img src="assets/uploads/jenis-fauna/fauna_1762270787.jpeg" class="card-img-top" alt="Burung Kuntul Sapi" style="aspect-ratio:16/9;object-fit:cover;">
+                    <div class="card-body">
+                        <h5 class="card-title text-success fw-semibold mb-1">Burung Kuntul Sapi</h5>
+                        <p class="text-muted fst-italic small mb-2">
+                            Bubulcus ibis                        </p>
+                        <p class="card-text small">
+                            Umumnya terlihat di sekitar padang rumput dan hewan ternak.                        </p>
+                    </div>
+                </div>
+            </div>
+                        <div class="col-md-3 p-3">
+                <div class="card shadow-sm interactive-card h-100">
+                    <img src="assets/uploads/jenis-fauna/fauna_1762274197.jpeg" class="card-img-top" alt="Burung Madu Punggung Zaitun" style="aspect-ratio:16/9;object-fit:cover;">
+                    <div class="card-body">
+                        <h5 class="card-title text-success fw-semibold mb-1">Burung Madu Punggung Zaitun</h5>
+                        <p class="text-muted fst-italic small mb-2">
+                            Cinnyris jugularis                        </p>
+                        <p class="card-text small">
+                            Burung kecil pengisap madu dengan warna kuning cerah.                        </p>
+                    </div>
+                </div>
+            </div>
+                        <div class="col-md-3 p-3">
+                <div class="card shadow-sm interactive-card h-100">
+                    <img src="assets/uploads/jenis-fauna/fauna_1762270762.jpeg" class="card-img-top" alt="Burung Kipasan Belang" style="aspect-ratio:16/9;object-fit:cover;">
+                    <div class="card-body">
+                        <h5 class="card-title text-success fw-semibold mb-1">Burung Kipasan Belang</h5>
+                        <p class="text-muted fst-italic small mb-2">
+                            Rhipidura javanica                        </p>
+                        <p class="card-text small">
+                            Burung kecil yang aktif mengibas-ngibaskan ekor saat mencari serangga.                        </p>
+                    </div>
+                </div>
+            </div>
+                        <div class="col-md-3 p-3">
+                <div class="card shadow-sm interactive-card h-100">
+                    <img src="assets/uploads/jenis-fauna/fauna_1762270720.jpeg" class="card-img-top" alt="Burung Cucak Kuricang" style="aspect-ratio:16/9;object-fit:cover;">
+                    <div class="card-body">
+                        <h5 class="card-title text-success fw-semibold mb-1">Burung Cucak Kuricang</h5>
+                        <p class="text-muted fst-italic small mb-2">
+                            Brachypodius atriceps                        </p>
+                        <p class="card-text small">
+                            Burung berkicau dengan warna gelap dan suara melengking.                        </p>
+                    </div>
+                </div>
+            </div>
+                        <div class="col-md-3 p-3">
+                <div class="card shadow-sm interactive-card h-100">
+                    <img src="assets/uploads/jenis-fauna/fauna_1762270778.jpeg" class="card-img-top" alt="Burung Kuntul Kerbau" style="aspect-ratio:16/9;object-fit:cover;">
+                    <div class="card-body">
+                        <h5 class="card-title text-success fw-semibold mb-1">Burung Kuntul Kerbau</h5>
+                        <p class="text-muted fst-italic small mb-2">
+                            Bubulcus ibis                        </p>
+                        <p class="card-text small">
+                            Varian kuntul putih yang sering mengikuti hewan besar.                        </p>
+                    </div>
+                </div>
+            </div>
+                        <div class="col-md-3 p-3">
+                <div class="card shadow-sm interactive-card h-100">
+                    <img src="assets/uploads/jenis-fauna/fauna_1762274292.jpeg" class="card-img-top" alt="Burung Merbah Cerukcuk (Cucak Kutilang)" style="aspect-ratio:16/9;object-fit:cover;">
+                    <div class="card-body">
+                        <h5 class="card-title text-success fw-semibold mb-1">Burung Merbah Cerukcuk (Cucak Kutilang)</h5>
+                        <p class="text-muted fst-italic small mb-2">
+                            Pycnonotus goiavier                        </p>
+                        <p class="card-text small">
+                            Burung kicau populer dengan suara nyaring dan aktif di semak belukar.                        </p>
+                    </div>
+                </div>
+            </div>
+                        <div class="col-md-3 p-3">
+                <div class="card shadow-sm interactive-card h-100">
+                    <img src="assets/uploads/jenis-fauna/fauna_1762273715.jpeg" class="card-img-top" alt="Burung Pipit Paruh Panjang / Pipit Sawah" style="aspect-ratio:16/9;object-fit:cover;">
+                    <div class="card-body">
+                        <h5 class="card-title text-success fw-semibold mb-1">Burung Pipit Paruh Panjang / Pipit Sawah</h5>
+                        <p class="text-muted fst-italic small mb-2">
+                            Anthus similis / Anthus rufulus                        </p>
+                        <p class="card-text small">
+                            Burung pemakan biji yang umum di sawah dan padang rumput.                        </p>
+                    </div>
+                </div>
+            </div>
+                        <div class="col-md-3 p-3">
+                <div class="card shadow-sm interactive-card h-100">
+                    <img src="assets/uploads/jenis-fauna/fauna_1762270803.jpeg" class="card-img-top" alt="Burung Kutilang Kuning Barat" style="aspect-ratio:16/9;object-fit:cover;">
+                    <div class="card-body">
+                        <h5 class="card-title text-success fw-semibold mb-1">Burung Kutilang Kuning Barat</h5>
+                        <p class="text-muted fst-italic small mb-2">
+                            Motacilla flava                        </p>
+                        <p class="card-text small">
+                            Burung kecil berwarna kuning cerah yang sering menari di tepi air.                        </p>
+                    </div>
+                </div>
+            </div>
+                        <div class="col-md-3 p-3">
+                <div class="card shadow-sm interactive-card h-100">
+                    <img src="assets/uploads/jenis-fauna/fauna_1762270996.jpeg" class="card-img-top" alt="Burung Cerek Kernyut / Cerek Emas Pasifik" style="aspect-ratio:16/9;object-fit:cover;">
+                    <div class="card-body">
+                        <h5 class="card-title text-success fw-semibold mb-1">Burung Cerek Kernyut / Cerek Emas Pasifik</h5>
+                        <p class="text-muted fst-italic small mb-2">
+                            Pluvialis fulva                        </p>
+                        <p class="card-text small">
+                            Burung pantai bermigrasi dengan bulu coklat keemasan di musim kawin.                        </p>
+                    </div>
+                </div>
+            </div>
+                        <div class="col-md-3 p-3">
+                <div class="card shadow-sm interactive-card h-100">
+                    <img src="assets/uploads/jenis-fauna/fauna_1762271660.jpeg" class="card-img-top" alt="Burung Trinil Pantai" style="aspect-ratio:16/9;object-fit:cover;">
+                    <div class="card-body">
+                        <h5 class="card-title text-success fw-semibold mb-1">Burung Trinil Pantai</h5>
+                        <p class="text-muted fst-italic small mb-2">
+                            Actitis hypoleucos                        </p>
+                        <p class="card-text small">
+                            Burung pantai kecil yang suka mengibas-ngibaskan ekornya saat berjalan.                        </p>
+                    </div>
+                </div>
+            </div>
+                        <div class="col-md-3 p-3">
+                <div class="card shadow-sm interactive-card h-100">
+                    <img src="assets/uploads/jenis-fauna/fauna_1762274070.jpeg" class="card-img-top" alt="Burung Madu Sriganti / Burung Madu Taman" style="aspect-ratio:16/9;object-fit:cover;">
+                    <div class="card-body">
+                        <h5 class="card-title text-success fw-semibold mb-1">Burung Madu Sriganti / Burung Madu Taman</h5>
+                        <p class="text-muted fst-italic small mb-2">
+                            Cinnyris jugularis                        </p>
+                        <p class="card-text small">
+                            Burung pengisap madu umum di taman dan daerah mangrove.                        </p>
+                    </div>
+                </div>
+            </div>
+                        <div class="col-md-3 p-3">
+                <div class="card shadow-sm interactive-card h-100">
+                    <img src="assets/uploads/jenis-fauna/fauna_1762270980.jpeg" class="card-img-top" alt="Burung Cekakak Sungai / Cekakak Belukar" style="aspect-ratio:16/9;object-fit:cover;">
+                    <div class="card-body">
+                        <h5 class="card-title text-success fw-semibold mb-1">Burung Cekakak Sungai / Cekakak Belukar</h5>
+                        <p class="text-muted fst-italic small mb-2">
+                            Todiramphus chloris                        </p>
+                        <p class="card-text small">
+                            Burung raja-udang dengan kepala besar dan paruh panjang.                        </p>
+                    </div>
+                </div>
+            </div>
+                        <div class="col-md-3 p-3">
+                <div class="card shadow-sm interactive-card h-100">
+                    <img src="assets/uploads/jenis-fauna/fauna_1762271580.webp" class="card-img-top" alt="Burung Merbah Cerucuk" style="aspect-ratio:16/9;object-fit:cover;">
+                    <div class="card-body">
+                        <h5 class="card-title text-success fw-semibold mb-1">Burung Merbah Cerucuk</h5>
+                        <p class="text-muted fst-italic small mb-2">
+                            Pycnonotus goiavier                        </p>
+                        <p class="card-text small">
+                            Burung kicau aktif di semak belukar, sering disebut juga cucak kutilang.                        </p>
+                    </div>
+                </div>
+            </div>
+                        <div class="col-md-3 p-3">
+                <div class="card shadow-sm interactive-card h-100">
+                    <img src="assets/uploads/jenis-fauna/fauna_1762273638.jpeg" class="card-img-top" alt="Burung Merpati Zebra / Merpati Tanah Berpalang" style="aspect-ratio:16/9;object-fit:cover;">
+                    <div class="card-body">
+                        <h5 class="card-title text-success fw-semibold mb-1">Burung Merpati Zebra / Merpati Tanah Berpalang</h5>
+                        <p class="text-muted fst-italic small mb-2">
+                            Geopelia striata                        </p>
+                        <p class="card-text small">
+                            Merpati kecil berpola garis di dada, umum ditemukan di perkotaan.                        </p>
+                    </div>
+                </div>
+            </div>
+                        <div class="col-md-3 p-3">
+                <div class="card shadow-sm interactive-card h-100">
+                    <img src="assets/uploads/jenis-fauna/fauna_1762273537.jpeg" class="card-img-top" alt="Lobster Lumpur / Lobster Bakau" style="aspect-ratio:16/9;object-fit:cover;">
+                    <div class="card-body">
+                        <h5 class="card-title text-success fw-semibold mb-1">Lobster Lumpur / Lobster Bakau</h5>
+                        <p class="text-muted fst-italic small mb-2">
+                            Thalassina anomala                        </p>
+                        <p class="card-text small">
+                            Krustasea penghuni lumpur mangrove yang membuat gundukan pasir besar.                        </p>
+                    </div>
+                </div>
+            </div>
+                        <div class="col-md-3 p-3">
+                <div class="card shadow-sm interactive-card h-100">
+                    <img src="assets/uploads/jenis-fauna/fauna_1762273428.jpg" class="card-img-top" alt="Kepiting Biola Merah Mangrove" style="aspect-ratio:16/9;object-fit:cover;">
+                    <div class="card-body">
+                        <h5 class="card-title text-success fw-semibold mb-1">Kepiting Biola Merah Mangrove</h5>
+                        <p class="text-muted fst-italic small mb-2">
+                            Tubuca rosea                        </p>
+                        <p class="card-text small">
+                            Kepiting kecil penghuni lumpur mangrove yang memiliki capit berwarna merah mencolok.                        </p>
+                    </div>
+                </div>
+            </div>
+                        <div class="col-md-3 p-3">
+                <div class="card shadow-sm interactive-card h-100">
+                    <img src="assets/uploads/jenis-fauna/fauna_1762445723.jpeg" class="card-img-top" alt="Kepiting Bakau" style="aspect-ratio:16/9;object-fit:cover;">
+                    <div class="card-body">
+                        <h5 class="card-title text-success fw-semibold mb-1">Kepiting Bakau</h5>
+                        <p class="text-muted fst-italic small mb-2">
+                            Scylla serrata                        </p>
+                        <p class="card-text small">
+                            Spesies kepiting besar penghuni akar mangrove yang bernilai ekonomi tinggi.                        </p>
+                    </div>
+                </div>
+            </div>
+                        <div class="col-md-3 p-3">
+                <div class="card shadow-sm interactive-card h-100">
+                    <img src="assets/uploads/jenis-fauna/fauna_1762445735.jpeg" class="card-img-top" alt="Kepiting Batu" style="aspect-ratio:16/9;object-fit:cover;">
+                    <div class="card-body">
+                        <h5 class="card-title text-success fw-semibold mb-1">Kepiting Batu</h5>
+                        <p class="text-muted fst-italic small mb-2">
+                            Parasesarma plicatum                        </p>
+                        <p class="card-text small">
+                            Kepiting kecil berwarna gelap yang hidup di sela bebatuan dan akar mangrove.                        </p>
+                    </div>
+                </div>
+            </div>
+                        <div class="col-md-3 p-3">
+                <div class="card shadow-sm interactive-card h-100">
+                    <img src="assets/uploads/jenis-fauna/fauna_1762445747.jpeg" class="card-img-top" alt="Kepiting Kapal" style="aspect-ratio:16/9;object-fit:cover;">
+                    <div class="card-body">
+                        <h5 class="card-title text-success fw-semibold mb-1">Kepiting Kapal</h5>
+                        <p class="text-muted fst-italic small mb-2">
+                            Plagusia dentipes                        </p>
+                        <p class="card-text small">
+                            Kepiting datar dengan kaki lebar yang sering menempel pada batu atau kapal di perairan dangkal.                        </p>
+                    </div>
+                </div>
+            </div>
+                        <div class="col-md-3 p-3">
+                <div class="card shadow-sm interactive-card h-100">
+                    <img src="assets/uploads/jenis-fauna/fauna_1762445679.jpeg" class="card-img-top" alt="Biawak Air" style="aspect-ratio:16/9;object-fit:cover;">
+                    <div class="card-body">
+                        <h5 class="card-title text-success fw-semibold mb-1">Biawak Air</h5>
+                        <p class="text-muted fst-italic small mb-2">
+                            Varanus salvator                        </p>
+                        <p class="card-text small">
+                            Reptil besar pemangsa ikan dan hewan kecil yang sering ditemukan di sekitar hutan mangrove.                        </p>
+                    </div>
+                </div>
+            </div>
+                        <div class="col-md-3 p-3">
+                <div class="card shadow-sm interactive-card h-100">
+                    <img src="assets/uploads/jenis-fauna/fauna_1762445703.jpeg" class="card-img-top" alt="Kadal Kebun" style="aspect-ratio:16/9;object-fit:cover;">
+                    <div class="card-body">
+                        <h5 class="card-title text-success fw-semibold mb-1">Kadal Kebun</h5>
+                        <p class="text-muted fst-italic small mb-2">
+                            Eutropis multifasciata                        </p>
+                        <p class="card-text small">
+                            Kadal kecil yang aktif di siang hari dan membantu mengendalikan populasi serangga.                        </p>
+                    </div>
+                </div>
+            </div>
+                        <div class="col-md-3 p-3">
+                <div class="card shadow-sm interactive-card h-100">
+                    <img src="assets/uploads/jenis-fauna/fauna_1762445950.jpeg" class="card-img-top" alt="Ular Air" style="aspect-ratio:16/9;object-fit:cover;">
+                    <div class="card-body">
+                        <h5 class="card-title text-success fw-semibold mb-1">Ular Air</h5>
+                        <p class="text-muted fst-italic small mb-2">
+                            Hypsiscopus plumbea                        </p>
+                        <p class="card-text small">
+                            Ular jinak berwarna abu-abu gelap yang sering terlihat berenang di sungai atau mangrove.                        </p>
+                    </div>
+                </div>
+            </div>
+                        <div class="col-md-3 p-3">
+                <div class="card shadow-sm interactive-card h-100">
+                    <img src="assets/uploads/jenis-fauna/fauna_1762445780.jpeg" class="card-img-top" alt="Kerang Darah" style="aspect-ratio:16/9;object-fit:cover;">
+                    <div class="card-body">
+                        <h5 class="card-title text-success fw-semibold mb-1">Kerang Darah</h5>
+                        <p class="text-muted fst-italic small mb-2">
+                            Anadara granosa                        </p>
+                        <p class="card-text small">
+                            Kerang berwarna coklat kemerahan dengan daging yang kaya zat besi dan hidup di lumpur pesisir.                        </p>
+                    </div>
+                </div>
+            </div>
+                        <div class="col-md-3 p-3">
+                <div class="card shadow-sm interactive-card h-100">
+                    <img src="assets/uploads/jenis-fauna/fauna_1762445790.jpeg" class="card-img-top" alt="Kerang Hijau" style="aspect-ratio:16/9;object-fit:cover;">
+                    <div class="card-body">
+                        <h5 class="card-title text-success fw-semibold mb-1">Kerang Hijau</h5>
+                        <p class="text-muted fst-italic small mb-2">
+                            Perna viridis                        </p>
+                        <p class="card-text small">
+                            Kerang laut berwarna hijau zamrud yang menempel pada struktur keras seperti tiang dermaga.                        </p>
+                    </div>
+                </div>
+            </div>
+                        <div class="col-md-3 p-3">
+                <div class="card shadow-sm interactive-card h-100">
+                    <img src="assets/uploads/jenis-fauna/fauna_1762445799.jpeg" class="card-img-top" alt="Kerang Totok" style="aspect-ratio:16/9;object-fit:cover;">
+                    <div class="card-body">
+                        <h5 class="card-title text-success fw-semibold mb-1">Kerang Totok</h5>
+                        <p class="text-muted fst-italic small mb-2">
+                            Geloina erosa                        </p>
+                        <p class="card-text small">
+                            Kerang besar air payau yang sering dijumpai di lumpur hutan mangrove.                        </p>
+                    </div>
+                </div>
+            </div>
+                        <div class="col-md-3 p-3">
+                <div class="card shadow-sm interactive-card h-100">
+                    <img src="assets/uploads/jenis-fauna/fauna_1762445870.jpeg" class="card-img-top" alt="Siput Air Payau" style="aspect-ratio:16/9;object-fit:cover;">
+                    <div class="card-body">
+                        <h5 class="card-title text-success fw-semibold mb-1">Siput Air Payau</h5>
+                        <p class="text-muted fst-italic small mb-2">
+                            Faunus ater                        </p>
+                        <p class="card-text small">
+                            Siput berukuran sedang dengan cangkang panjang yang hidup di perairan estuari.                        </p>
+                    </div>
+                </div>
+            </div>
+                        <div class="col-md-3 p-3">
+                <div class="card shadow-sm interactive-card h-100">
+                    <img src="assets/uploads/jenis-fauna/fauna_1762445880.jpeg" class="card-img-top" alt="Siput Burgundy" style="aspect-ratio:16/9;object-fit:cover;">
+                    <div class="card-body">
+                        <h5 class="card-title text-success fw-semibold mb-1">Siput Burgundy</h5>
+                        <p class="text-muted fst-italic small mb-2">
+                            Achatina fulica                        </p>
+                        <p class="card-text small">
+                            Siput darat besar bercangkang coklat spiral yang dikenal sebagai hama tanaman.                        </p>
+                    </div>
+                </div>
+            </div>
+                        <div class="col-md-3 p-3">
+                <div class="card shadow-sm interactive-card h-100">
+                    <img src="assets/uploads/jenis-fauna/fauna_1762445930.jpeg" class="card-img-top" alt="Teripang Hitam" style="aspect-ratio:16/9;object-fit:cover;">
+                    <div class="card-body">
+                        <h5 class="card-title text-success fw-semibold mb-1">Teripang Hitam</h5>
+                        <p class="text-muted fst-italic small mb-2">
+                            Holothuria atra                        </p>
+                        <p class="card-text small">
+                            Hewan laut berbentuk silindris yang berperan penting dalam membersihkan dasar laut.                        </p>
+                    </div>
+                </div>
+            </div>
+                        <div class="col-md-3 p-3">
+                <div class="card shadow-sm interactive-card h-100">
+                    <img src="assets/uploads/jenis-fauna/fauna_1762445940.jpeg" class="card-img-top" alt="Tiram" style="aspect-ratio:16/9;object-fit:cover;">
+                    <div class="card-body">
+                        <h5 class="card-title text-success fw-semibold mb-1">Tiram</h5>
+                        <p class="text-muted fst-italic small mb-2">
+                            Crassostrea sp.                        </p>
+                        <p class="card-text small">
+                            Hewan bercangkang ganda yang hidup menempel di batu dan menyaring air laut untuk makan.                        </p>
+                    </div>
+                </div>
+            </div>
+                        <div class="col-md-3 p-3">
+                <div class="card shadow-sm interactive-card h-100">
+                    <img src="assets/uploads/jenis-fauna/fauna_1762445692.jpeg" class="card-img-top" alt="Jangkrik" style="aspect-ratio:16/9;object-fit:cover;">
+                    <div class="card-body">
+                        <h5 class="card-title text-success fw-semibold mb-1">Jangkrik</h5>
+                        <p class="text-muted fst-italic small mb-2">
+                            Oecanthus latipennis                        </p>
+                        <p class="card-text small">
+                            Serangga malam penghasil suara khas yang berperan penting dalam rantai makanan.                        </p>
+                    </div>
+                </div>
+            </div>
+                        <div class="col-md-3 p-3">
+                <div class="card shadow-sm interactive-card h-100">
+                    <img src="assets/uploads/jenis-fauna/fauna_1762445814.jpeg" class="card-img-top" alt="Kumbang Kuning" style="aspect-ratio:16/9;object-fit:cover;">
+                    <div class="card-body">
+                        <h5 class="card-title text-success fw-semibold mb-1">Kumbang Kuning</h5>
+                        <p class="text-muted fst-italic small mb-2">
+                            Coleoptera sp.                        </p>
+                        <p class="card-text small">
+                            Serangga kecil berwarna kuning mengilap dengan sayap keras khas kumbang.                        </p>
+                    </div>
+                </div>
+            </div>
+                        <div class="col-md-3 p-3">
+                <div class="card shadow-sm interactive-card h-100">
+                    <img src="assets/uploads/jenis-fauna/fauna_1762445827.jpeg" class="card-img-top" alt="Kunang-kunang" style="aspect-ratio:16/9;object-fit:cover;">
+                    <div class="card-body">
+                        <h5 class="card-title text-success fw-semibold mb-1">Kunang-kunang</h5>
+                        <p class="text-muted fst-italic small mb-2">
+                            Lampyridae sp.                        </p>
+                        <p class="card-text small">
+                            Serangga bercahaya yang menyala di malam hari melalui reaksi bioluminesensi.                        </p>
+                    </div>
+                </div>
+            </div>
+                        <div class="col-md-3 p-3">
+                <div class="card shadow-sm interactive-card h-100">
+                    <img src="assets/uploads/jenis-fauna/fauna_1762445838.jpeg" class="card-img-top" alt="Lalat Kuda" style="aspect-ratio:16/9;object-fit:cover;">
+                    <div class="card-body">
+                        <h5 class="card-title text-success fw-semibold mb-1">Lalat Kuda</h5>
+                        <p class="text-muted fst-italic small mb-2">
+                            Tabanus striatus                        </p>
+                        <p class="card-text small">
+                            Serangga penghisap darah dengan gigitan kuat yang aktif di siang hari.                        </p>
+                    </div>
+                </div>
+            </div>
+                        <div class="col-md-3 p-3">
+                <div class="card shadow-sm interactive-card h-100">
+                    <img src="assets/uploads/jenis-fauna/fauna_1762445850.jpeg" class="card-img-top" alt="Nyamuk" style="aspect-ratio:16/9;object-fit:cover;">
+                    <div class="card-body">
+                        <h5 class="card-title text-success fw-semibold mb-1">Nyamuk</h5>
+                        <p class="text-muted fst-italic small mb-2">
+                            Culicidae sp.                        </p>
+                        <p class="card-text small">
+                            Serangga kecil penghisap darah yang juga menjadi pakan bagi banyak fauna lain.                        </p>
+                    </div>
+                </div>
+            </div>
+                        <div class="col-md-3 p-3">
+                <div class="card shadow-sm interactive-card h-100">
+                    <img src="assets/uploads/jenis-fauna/fauna_1762445861.jpeg" class="card-img-top" alt="Semut Hitam" style="aspect-ratio:16/9;object-fit:cover;">
+                    <div class="card-body">
+                        <h5 class="card-title text-success fw-semibold mb-1">Semut Hitam</h5>
+                        <p class="text-muted fst-italic small mb-2">
+                            Dolichoderus thoracicus                        </p>
+                        <p class="card-text small">
+                            Semut sosial pekerja keras yang membantu menjaga keseimbangan ekosistem tanah.                        </p>
+                    </div>
+                </div>
+            </div>
+                    </div>
+        <div class="text-center mt-5 fade-in" style="max-width:720px;margin:auto;">
+            <p class="text-light" style="font-size:1.1em;line-height:1.7;">
+                <em>“Setiap burung-burung yang menari di tepi air, hingga kepiting, kerang, dan siput yang bersembunyi di lumpur adalah bagian dari rantai kehidupan yang saling menjaga. Dengan melindungi mereka, kita sesungguhnya sedang <strong>menjaga diri kita sendiri</strong>.”</em>
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- Galeri Foto -->
+<section id="galeri" style="display:flex;justify-content:center;align-items:center;min-height:400px;background:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('assets/img/background/galeri-01.webp') center/cover no-repeat;color:white;">
+    <div class="container my-5">
+        <h2 class="section-title mt-0">Galeri</h2>
+
+        <p class="text-center text-light mb-4" style="max-width:750px;margin:auto;line-height:1.6;">
+            Lihat bagaimana relawan, pengunjung, dan masyarakat bersama menanam harapan di pesisir Lampulo
+        </p>
+
+        <div class="row g-4 insta-embed justify-content-center">
+
+            <!-- Reels 1 -->
+            <div class="col-12 col-sm-12 col-lg-4 p-3">
+                <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DMmGvJIBSxL/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);">
+                    <div style="padding:16px;">
+                        <a href="https://www.instagram.com/reel/DMmGvJIBSxL/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank"> <div style=" display: flex; flex-direction: row; align-items: center;">
+                            <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div>
+                            <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;">
+                                <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div>
+                                <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div>
+                            </div>
+                        </div>
+                            <div style="padding: 19% 0;"></div>
+                            <div style="display:block; height:50px; margin:0 auto 12px; width:50px;">
+                                <svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-511.000000, -20.000000)" fill="#000000"><g><path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path></g></g></g></svg>
+                            </div>
+                            <div style="padding-top: 8px;">
+                                <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">
+                                    View this post on Instagram
+                                </div>
+                            </div>
+                            <div style="padding: 12.5% 0;"></div>
+                            <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;">
+                                <div>
+                                    <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div>
+                                    <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div>
+                                    <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div>
+                                </div>
+                                <div style="margin-left: 8px;">
+                                    <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div>
+                                    <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div>
+                                </div>
+                                <div style="margin-left: auto;">
+                                    <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div>
+                                    <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div>
+                                    <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div>
+                                </div>
+                            </div>
+                            <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;">
+                                <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;"></div>
+                                <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;"></div>
+                            </div>
+                        </a><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">
+                            <a href="https://www.instagram.com/reel/DMmGvJIBSxL/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">A post shared by Wahdini Husniyah Hajirah (@wahdiniyarah)</a>
+                        </p>
+                    </div>
+                </blockquote>
+            </div>
+
+            <!-- Reels 2 -->
+            <div class="col-12 col-sm-12 col-lg-4 p-3">
+                <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DQ11wZuEt6s/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);">
+                    <div style="padding:16px;">
+                        <a href="https://www.instagram.com/p/DQ11wZuEt6s/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank"> <div style=" display: flex; flex-direction: row; align-items: center;">
+                            <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div>
+                            <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;">
+                                <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div>
+                                <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div>
+                            </div>
+                        </div>
+                            <div style="padding: 19% 0;"></div>
+                            <div style="display:block; height:50px; margin:0 auto 12px; width:50px;">
+                                <svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-511.000000, -20.000000)" fill="#000000"><g><path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path></g></g></g></svg>
+                            </div>
+                            <div style="padding-top: 8px;">
+                                <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">
+                                    View this post on Instagram
+                                </div>
+                            </div>
+                            <div style="padding: 12.5% 0;"></div>
+                            <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;">
+                                <div>
+                                    <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div>
+                                    <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div>
+                                    <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div>
+                                </div>
+                                <div style="margin-left: 8px;">
+                                    <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div>
+                                    <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div>
+                                </div>
+                                <div style="margin-left: auto;">
+                                    <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div>
+                                    <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div>
+                                    <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div>
+                                </div>
+                            </div>
+                            <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;">
+                                <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;"></div>
+                                <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;"></div>
+                            </div>
+                        </a><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">
+                            <a href="https://www.instagram.com/p/DQ11wZuEt6s/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">A post shared by Ulfa Azkia (@ulfaazkiamj)</a>
+                        </p>
+                    </div>
+                </blockquote>
+            </div>
+
+            <!-- Reels 3 -->
+            <div class="col-12 col-sm-12 col-lg-4 p-3">
+                <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DMmOBsIS4QX/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);">
+                    <div style="padding:16px;">
+                        <a href="https://www.instagram.com/reel/DMmOBsIS4QX/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank"> <div style=" display: flex; flex-direction: row; align-items: center;">
+                            <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div>
+                            <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;">
+                                <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div>
+                                <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div>
+                            </div>
+                        </div>
+                            <div style="padding: 19% 0;"></div>
+                            <div style="display:block; height:50px; margin:0 auto 12px; width:50px;">
+                                <svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-511.000000, -20.000000)" fill="#000000"><g><path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path></g></g></g></svg>
+                            </div>
+                            <div style="padding-top: 8px;">
+                                <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">
+                                    View this post on Instagram
+                                </div>
+                            </div>
+                            <div style="padding: 12.5% 0;"></div>
+                            <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;">
+                                <div>
+                                    <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div>
+                                    <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div>
+                                    <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div>
+                                </div>
+                                <div style="margin-left: 8px;">
+                                    <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div>
+                                    <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div>
+                                </div>
+                                <div style="margin-left: auto;">
+                                    <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div>
+                                    <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div>
+                                    <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div>
+                                </div>
+                            </div>
+                            <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;">
+                                <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;"></div>
+                                <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;"></div>
+                            </div>
+                        </a><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">
+                            <a href="https://www.instagram.com/reel/DMmOBsIS4QX/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">A post shared by PEMANGKU (@pemangku_mangrove)</a>
+                        </p>
+                    </div>
+                </blockquote>
+            </div>
+
+            <!-- Instagram Embed JS -->
+            <script async src="https://www.instagram.com/embed.js"></script>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- Section Testimoni -->
+<section id="testimoni" class="py-5" style="background:#F4F1E9;">
+    <div class="container">
+        <div class="text-center mb-4">
+            <h2 class="fw-bold" style="color:#2B463C;">Testimoni Pengunjung</h2>
+            <p class="text-muted">
+                Suara mereka yang telah merasakan keindahan Mangrove Park Lampulo
+            </p>
+        </div>
+
+        <div class="testimoni-quote" style="color:#dbe7d8;text-align:center;margin-bottom:30px;">
+            <i class="fa fa-quote-left fa-4x"></i>
+        </div>
+
+        <div id="carouselTestimoni" class="carousel slide" data-bs-ride="carousel" data-bs-interval="6000" style=" margin-bottom: 20px; ">
+            <div class="carousel-inner">
+
+                <!-- Testimoni 1 -->
+                <div class="carousel-item active">
+                    <div class="card border-0 shadow-sm mx-auto" style="max-width:700px;background:#ffffff;">
+                        <div class="card-body text-center p-4">
+                            <p class="fs-5 fst-italic mb-3">
+                                “Tempatnya sangat asri, udara segar, dan edukatif untuk anak-anak tentang pentingnya mangrove.”
+                            </p>
+                            <h5 class="fw-bold mb-0" style="color:#2E7D32;">Rina S.</h5>
+                            <small class="text-muted">Guru SD, Banda Aceh</small>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimoni 2 -->
+                <div class="carousel-item">
+                    <div class="card border-0 shadow-sm mx-auto" style="max-width:700px;background:#ffffff;">
+                        <div class="card-body text-center p-4">
+                            <p class="fs-5 fst-italic mb-3">
+                                “Saya kagum dengan keindahan hutan bakau di Lampulo. Pemandangan dan kesadaran lingkungannya luar biasa.”
+                            </p>
+                            <h5 class="fw-bold mb-0" style="color:#2E7D32;">Fadli Rahman</h5>
+                            <small class="text-muted">Fotografer Alam</small>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimoni 3 -->
+                <div class="carousel-item">
+                    <div class="card border-0 shadow-sm mx-auto" style="max-width:700px;background:#ffffff;">
+                        <div class="card-body text-center p-4">
+                            <p class="fs-5 fst-italic mb-3">
+                                “Tempat terbaik untuk mengenalkan anak-anak pada konservasi alam. Pemandunya juga sangat informatif.”
+                            </p>
+                            <h5 class="fw-bold mb-0" style="color:#2E7D32;">Nurul H.</h5>
+                            <small class="text-muted">Orang Tua Pengunjung</small>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Navigasi Carousel -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselTestimoni" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true" style="filter: invert(44%) sepia(10%) saturate(624%) hue-rotate(90deg) brightness(90%) contrast(90%);"></span>
+                <span class="visually-hidden">Sebelumnya</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselTestimoni" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true" style="filter: invert(44%) sepia(10%) saturate(624%) hue-rotate(90deg) brightness(90%) contrast(90%);"></span>
+                <span class="visually-hidden">Selanjutnya</span>
+            </button>
+        </div>
+    </div>
+</section>
+
+
+<!-- Footer -->
+<footer id="kontak" class="mt-0" style="background: linear-gradient(180deg, #2B463C 0%, #1B2E26 100%); color: #E6EDDA; border-top: 4px solid #B1D182;">
+    <div class="container pt-5">
+        <div class="row">
+            <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                <p class="mb-2">
+                    <img src="assets/uploads/logo/logo_1762005991.png" alt="Mangrove Park Lampulo" style="height:60px;width:auto;">
+                </p>
+                <p class="mb-2">
+                    <strong>Mangrove Park Lampulo</strong>
+                    <br>
+                    <i class="fa fa-location-dot"></i> Jl. Sisingamangaraja Ujung No.10, Lampulo, Kec. Kuta Alam, Kota Banda Aceh, Aceh                    <br>
+                    <i class="fab fa-whatsapp"></i> Chat WhatsApp: +62 895-6000-0026-3                    <br>
+                    <i class="fa fa-envelope"></i> Email: mpl@naturalaceh.org                </p>
+            </div>
+            <div class="col-md-6 text-center text-md-end">
+                <p class="mb-2">
+                    Didukung oleh:
+                </p>
+                <a target="_blank" href="https://www.instagram.com/naturalaceh/" title="Natural Aceh" style="color:transparent;">
+                    <img src="assets/img/logo/logo-natural-aceh-200.png" alt="Sponsor 1" class="sponsor me-2 rounded shadow-sm" style="height:90px;width:auto;">
+                </a>
+                <a target="_blank" href="https://www.instagram.com/pemangku_mangrove/" title="Pemuda Peduli Mangrove Kutaraja" style="color:transparent;">
+                    <img src="assets/img/logo/logo-pemangku-mangrove-200.png" alt="Sponsor 2" class="sponsor me-2 rounded shadow-sm" style="height:90px;width:auto;">
+                </a>
+                <a target="_blank" href="https://www.instagram.com/yayasankehati/" title="Yayasan Keanekaragaman Hayati" style="color:transparent;">
+                    <img src="assets/img/logo/logo-kehati-200.png" alt="Sponsor 3" class="sponsor rounded shadow-sm" style="height:90px;width:auto;">
+                </a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <p class="mt-5 mb-4">
+                    &copy; 2026 Mangrove Park Lampulo | Pelestarian untuk Generasi Mendatang
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- Tombol Scroll to Top -->
+<button id="btnTop" class="btn-top" title="Kembali ke atas"><i class="fa fa-leaf"></i></button>
+
+<!-- Tombol WhatsApp Melayang -->
+<a href="https://wa.me/62895600000263" class="btn-whatsapp" target="_blank" title="Chat via WhatsApp"><i class="fab fa-whatsapp"></i></a>
+
+</body>
+</html>

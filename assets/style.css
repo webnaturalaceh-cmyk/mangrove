@@ -1,0 +1,735 @@
+body {
+	font-family: 'Roboto', sans-serif;
+}
+
+.font-general {
+	font-family: 'Roboto', sans-serif;
+}
+
+.font-condensed {
+	font-family: 'Roboto Condensed', sans-serif;
+}
+
+a {
+	color: #198754;
+	text-decoration: none;
+	transition: color 0.25s ease;
+}
+
+a:hover {
+	color: #6DA96D;
+	text-decoration: none;
+}
+
+pre {
+	overflow: auto;
+	border: 1px solid #999;
+	page-break-inside: avoid;
+	display: block;
+	padding: 9.5px;
+	margin: 0 0 10px;
+	font-size: 13px;
+	line-height: 1.42857143;
+	color: #333;
+	word-break: break-all;
+	word-wrap: break-word;
+	background-color: #f5f5f5;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	margin-top: 56px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+input[type=number] {
+	-moz-appearance: textfield;
+}
+
+.badge.bg-warning,
+.badge.bg-info {
+	color: #212529;
+}
+
+/* GENERAL EFFECTS */
+
+.blink {
+	animation: blink-animation 1s steps(5, start) infinite;
+	-webkit-animation: blink-animation 1s steps(5, start) infinite;
+}
+
+.blink-alert {
+	color: red !important;
+	font-weight: 600;
+	animation: blink-animation 1s steps(5, start) infinite;
+	-webkit-animation: blink-animation 1s steps(5, start) infinite;
+}
+
+@keyframes blink-animation {
+	to {
+		visibility: hidden;
+	}
+}
+
+@-webkit-keyframes blink-animation {
+	to {
+		visibility: hidden;
+	}
+}
+
+.glow select {
+	border: 0px;
+}
+
+.glow {
+	-webkit-animation-name: promptGlow;
+	-webkit-animation-duration: 2s;
+	-webkit-animation-iteration-count: infinite;
+	animation-name: promptGlow;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes promptGlow {
+	from {
+		box-shadow: 0 0 10px rgba(51, 51, 51, 0.22);
+	}
+
+	50% {
+		box-shadow: 0 0 40px rgba(51, 51, 51, 0.44);
+	}
+
+	to {
+		box-shadow: 0 0 10px rgba(51, 51, 51, 0.22);
+	}
+}
+
+.rainbow {
+	animation: color-change 5s infinite;
+}
+
+@keyframes color-change {
+	0% {
+		color: #FF0000
+	}
+
+	15% {
+		color: #f26522
+	}
+
+	30% {
+		color: #fff200
+	}
+
+	40% {
+		color: #00a651
+	}
+
+	60% {
+		color: #28abe2
+	}
+
+	80% {
+		color: #2e3192
+	}
+
+	90% {
+		color: #6868ff
+	}
+
+	100% {
+		color: #FF0000
+	}
+}
+
+.arrow-sliding {
+	-webkit-animation: arrow-sliding 1s infinite;
+	/* Safari 4+ */
+	-moz-animation: arrow-sliding 1s infinite;
+	/* Fx 5+ */
+	-o-animation: arrow-sliding 1s infinite;
+	/* Opera 12+ */
+	animation: arrow-sliding 1s infinite;
+	/* IE 10+, Fx 29+ */
+}
+
+@-webkit-keyframes arrow-sliding {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+		-webkit-transform: translateX(10px);
+		-moz-transform: translateX(10px);
+		-o-transform: translateX(10px);
+		transform: translateX(10px);
+	}
+}
+
+.input-changed {
+	animation: highlightChange 1s ease-out;
+}
+
+@keyframes highlightChange {
+	0% {
+		background-color: #d4f8d4;
+	}
+
+	/* hijau muda */
+	100% {
+		background-color: transparent;
+	}
+}
+
+/* Bagian teks pertama — nuansa tanah/cokelat */
+.daun-brown {
+	background: linear-gradient(90deg,
+			#4e342e,
+			#6d4c41,
+			#8d6e63,
+			#a1887f,
+			#4e342e);
+	background-size: 300%;
+	-webkit-background-clip: text;
+	color: transparent;
+	animation: tanahGradient 6s ease infinite;
+}
+
+/* Bagian teks kedua — nuansa daun/hijau */
+.daun-green {
+	background: linear-gradient(90deg,
+			#1b5e20,
+			#388e3c,
+			#66bb6a,
+			#a5d6a7,
+			#1b5e20);
+	background-size: 300%;
+	-webkit-background-clip: text;
+	color: transparent;
+	animation: daunGradient 6s ease infinite;
+}
+
+@keyframes tanahGradient {
+	0% {
+		background-position: 0% 50%;
+	}
+
+	50% {
+		background-position: 100% 50%;
+	}
+
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+@keyframes daunGradient {
+	0% {
+		background-position: 100% 50%;
+	}
+
+	50% {
+		background-position: 0% 50%;
+	}
+
+	100% {
+		background-position: 100% 50%;
+	}
+}
+
+/* Tombol scroll ke atas — tema hutan bakau */
+.btn-top {
+	position: fixed;
+	bottom: 30px;
+	right: 30px;
+	z-index: 999;
+	width: 52px;
+	height: 52px;
+	border: none;
+	border-radius: 50%;
+	background: linear-gradient(135deg, #1b5e20, #4e342e);
+	color: #fff;
+	font-size: 22px;
+	cursor: pointer;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: all 0.3s ease;
+}
+
+.btn-top:hover {
+	background: linear-gradient(135deg, #2e7d32, #6d4c41);
+	transform: translateY(-3px);
+	box-shadow: 0 6px 14px rgba(0, 0, 0, 0.35);
+}
+
+.btn-top i {
+	animation: daunGoyang 3s ease-in-out infinite;
+}
+
+/* Efek "daun bergoyang" pelan */
+@keyframes daunGoyang {
+
+	0%,
+	100% {
+		transform: rotate(0deg);
+	}
+
+	50% {
+		transform: rotate(-15deg);
+	}
+}
+
+/* Tombol WhatsApp melayang */
+.btn-whatsapp {
+	position: fixed;
+	bottom: 30px;
+	left: 30px;
+	/* kanan bisa juga, sesuaikan */
+	z-index: 998;
+	width: 58px;
+	height: 58px;
+	background: linear-gradient(135deg, #1b5e20, #2e7d32);
+	color: #fff;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 30px;
+	text-decoration: none;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+	transition: all 0.3s ease;
+}
+
+.btn-whatsapp:hover {
+	background: linear-gradient(135deg, #2e7d32, #66bb6a);
+	transform: scale(1.05);
+	box-shadow: 0 6px 16px rgba(0, 0, 0, 0.35);
+	text-decoration: none;
+}
+
+.btn-whatsapp i {
+	animation: goyangDaun 3s ease-in-out infinite;
+}
+
+/* Animasi ikon WhatsApp pelan seperti daun goyang */
+@keyframes goyangDaun {
+
+	0%,
+	100% {
+		transform: rotate(0deg);
+	}
+
+	50% {
+		transform: rotate(10deg);
+	}
+}
+
+/* FRONTEND */
+
+@media (max-width: 450px) {
+	.navbar-brand {
+		font-size: 15px;
+	}
+
+	.carousel-indicators {
+		margin-bottom: 0;
+	}
+}
+
+/* Efek lembut ketika hover card */
+.interactive-card {
+	cursor: pointer;
+	transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.interactive-card:hover {
+	transform: scale(1.03);
+	box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+}
+
+.card-img-top {
+	aspect-ratio: 16 / 9;
+	/* Atur rasio gambar 16:9 */
+	width: 100%;
+	object-fit: cover;
+	object-position: center;
+	border-radius: 0.5rem 0.5rem 0 0;
+	transition: opacity 0.4s ease-in-out, transform 0.3s ease;
+	filter: blur(0);
+	-webkit-filter: blur(0);
+}
+
+.card-img-top:hover {
+	opacity: 0.5;
+}
+
+.insta-embed blockquote.instagram-media {
+	width: 100% !important;
+	max-width: 100% !important;
+	margin: 0 auto !important;
+}
+
+footer {
+	background-color: #333;
+	color: #fff;
+	margin-top: 60px;
+	/* jarak aman dengan konten sebelumnya */
+}
+
+.section-title {
+	text-align: center;
+	margin: 40px 0 20px 0;
+}
+
+.news-title {
+	font-weight: 700;
+	color: #2B463C;
+}
+
+.news-meta {
+	color: #888;
+	font-size: 0.9rem;
+}
+
+.news-content p {
+	text-align: justify;
+	line-height: 1.8;
+	font-size: 1.05rem;
+	margin-bottom: 1.2rem;
+}
+
+.sidebar h5 {
+	border-bottom: 2px solid #B1D182;
+	padding-bottom: 5px;
+	margin-bottom: 15px;
+	font-weight: 700;
+	color: #2B463C;
+}
+
+.sidebar ul {
+	list-style: none;
+	padding-left: 0;
+}
+
+.sidebar ul li {
+	margin-bottom: 10px;
+	border-bottom: 1px dashed #ddd;
+	padding-bottom: 8px;
+}
+
+.sponsor:hover {
+	opacity: 0.5;
+}
+
+/* BACKEND */
+
+main.backend {
+	margin-top: 56px;
+}
+
+.highlighted {
+	background-color: #fff3cd !important;   /* kuning lembut */
+    transition: background-color 0.8s ease;
+}
+
+label.form-label {
+	font-weight: bold;
+}
+
+.sidebar-desktop,
+.sidebar-mobile {
+	background: linear-gradient(180deg, #2B463C 0%, #1B2E26 100%);
+}
+
+.sidebar-desktop {
+	/* secara default sembunyikan scrollbar atas bawah */
+	overflow-y: hidden;
+	/* agar pas dengan tinggi viewport */
+	max-height: calc(100vh - 56px);
+	transition: all 0.3s ease;
+	width: 220px;
+	min-height: 100vh;
+	position: fixed;
+	/* offset dari navbar */
+	top: 56px;
+	left: 0;
+}
+
+/* saat mouse diarahkan ke sidebar, aktifkan scroll */
+.sidebar-desktop:hover {
+	overflow-y: auto;
+}
+
+/* START scrollbar gaya minimalis */
+
+.sidebar-desktop::-webkit-scrollbar {
+	width: 6px;
+}
+
+.sidebar-desktop::-webkit-scrollbar-thumb {
+	background-color: rgba(255, 255, 255, 0.15);
+	border-radius: 10px;
+	transition: background-color 0.3s ease;
+}
+
+.sidebar-desktop::-webkit-scrollbar-thumb:hover {
+	background-color: rgba(255, 255, 255, 0.35);
+}
+
+.sidebar-desktop {
+	scrollbar-width: thin;
+	scrollbar-color: rgba(255, 255, 255, 0.15) transparent;
+}
+
+.sidebar-desktop:hover {
+	scrollbar-color: rgba(255, 255, 255, 0.35) transparent;
+}
+
+/* END scrollbar gaya minimalis */
+
+.sidebar-desktop a {
+	font-family: 'Roboto Condensed', sans-serif;
+	color: #fff;
+	text-decoration: none;
+	padding: 10px 15px;
+	display: block;
+}
+
+.sidebar-desktop a.active {
+	font-weight: bold;
+}
+
+.sidebar-desktop a:hover {
+	background: #495057;
+}
+
+.sidebar-desktop img {
+	border: 2px solid #4c565f;
+}
+
+.sidebar-desktop h6 {
+	font-size: 0.95rem;
+	font-weight: 600;
+}
+
+.sidebar-desktop small {
+	font-size: 0.75rem;
+	color: #bbb;
+}
+
+.sidebar-mobile a {
+	font-family: 'Roboto Condensed', sans-serif;
+	color: #fff;
+	text-decoration: none;
+	padding: 10px 15px;
+	display: block;
+}
+
+.sidebar-mobile a.active {
+	font-weight: bold;
+}
+
+.sidebar-mobile a:hover {
+	background: #495057;
+}
+
+.sidebar-desktop a.active,
+.sidebar-mobile a.active {
+	background: #4c565f;
+	color: #fff !important;
+	font-weight: bold;
+}
+
+.sidebar-desktop li.active-parent>a,
+.sidebar-mobile li.active-parent>a {
+	background: #4c565f;
+	color: #fff !important;
+	font-weight: bold;
+}
+
+.sidebar-desktop li.active-parent,
+.sidebar-mobile li.active-parent {
+	background: #4c565f;
+}
+
+.sidebar-desktop li,
+.sidebar-mobile li {
+	border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.sidebar-desktop li:last-child,
+.sidebar-mobile li:last-child {
+	border-bottom: none;
+}
+
+.sidebar-desktop a i,
+.sidebar-mobile a i,
+.sidebar-desktop .collapse a i,
+.sidebar-mobile .collapse a i,
+.sidebar-desktop a svg,
+.sidebar-mobile a svg,
+.sidebar-desktop .collapse a svg,
+.sidebar-mobile .collapse a svg {
+	margin-right: 5px;
+}
+
+.sidebar-avatar {
+	border-radius: 50%;
+	object-fit: cover;
+	border: 2px solid rgba(255, 255, 255, 0.25);
+	box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
+	transition: transform 0.25s ease, opacity 0.25s ease, border 0.25s ease, box-shadow 0.25s ease;
+	cursor: pointer;
+	display: inline-block;
+}
+
+.sidebar-avatar:hover {
+	transform: scale(1.07);
+	opacity: 0.85;
+	border: 3px solid rgba(255, 255, 255, 0.8);
+	box-shadow: 0 4px 10px rgba(255, 255, 255, 0.3);
+}
+
+.rotate-icon {
+	transition: transform 0.3s ease;
+}
+
+.rotate-icon.rotate {
+	transform: rotate(-90deg);
+}
+
+@media (min-width: 992px) {
+	main {
+		margin-left: 220px;
+	}
+}
+
+@media screen and (min-width: 767px) {
+	.dt-buttons {
+		padding-right: 8px;
+	}
+}
+
+/* Datatables */
+
+.dt-length {
+	display: inline;
+}
+
+.dt-search {
+	display: inline;
+	float: right;
+}
+
+.dt-info {
+	padding-top: 8px;
+}
+
+table.table.dataTable {
+	margin-top: 8px;
+}
+
+table.dataTable th,
+table.dataTable td {
+	font-size: 14px;
+}
+
+table.dataTable thead>tr {
+	border-color: rgb(222, 226, 230);
+}
+
+table.dataTable thead>tr>th, .th-pakai-bg {
+	background: #feffff;
+	background: -moz-linear-gradient(top, #feffff 0%, #d8f9d2 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #feffff), color-stop(100%, #d8f9d2));
+	background: -webkit-linear-gradient(top, #feffff 0%, #d8f9d2 100%);
+	background: -o-linear-gradient(top, #feffff 0%, #d8f9d2 100%);
+	background: -ms-linear-gradient(top, #feffff 0%, #d8f9d2 100%);
+	background: linear-gradient(to bottom, #feffff 0%, #d8f9d2 100%);
+}
+
+table.dataTable tbody tr.highlighted,
+table.table tbody tr.highlighted,
+table.dataTable tbody tr.highlighted td,
+table.table tbody tr.highlighted td {
+	background-color: #fff3cd !important;   /* kuning lembut */
+    transition: background-color 0.8s ease;
+    box-shadow: none !important;
+}
+
+div.dt-paging nav {
+	text-align: right;
+}
+
+@media screen and (max-width: 767px) {
+	div.dt-paging nav {
+		text-align: center;
+	}
+}
+
+div.dt-paging nav ul.pagination {
+	display: inline-flex;
+}
+
+.pagination {
+	display: inline-flex;
+}
+
+.pagination .page-item.disabled .page-link {
+	color: rgb(33 37 41 / 75%);
+}
+
+.pagination .page-item .page-link {
+	color: #333;
+	font-size: 13px;
+}
+
+.pagination .page-item.active>.page-link,
+.page-link.active {
+	background-color: #e7e7e7;
+	border-color: #dee2e6;
+}
+
+.pagination .page-item.disabled>.page-link,
+.page-link.disabled {
+	background-color: #fff;
+	color: #777;
+}
+
+/* Flatpickr */
+
+.flatpickr-confirm {
+	background: #198754;
+	color: #fff;
+	font-weight: bold;
+}
+
+.flatpickr-confirm svg {
+	display: none;
+}
+
+/* Select2 */
+
+.select2-container--default .select2-selection--multiple {
+	border: 1px solid rgb(222, 226, 230);
+}
+
+.select2-container--default.select2-container--focus .select2-selection--multiple {
+	/* warna biru muda */
+	border: solid 1px #86b7fe;
+	outline: 0;
+	/* efek biru lembut */
+	box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+
+.select2-container .select2-search--inline .select2-search__field {
+	height: 26px;
+	margin: 0;
+	padding: .375rem .75rem;
+}
